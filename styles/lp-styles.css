@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+
+:root {
+    --rosafraco: #ff86c8;
+    --texto: #2b282a;
+    --vermelho: rgb(255, 76, 76);
+    --bg: #fff8dc;
+    --azul: #30706f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--texto);
+  letter-spacing: -2px;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffd4db;
+  padding-bottom: 10px;
+  
+}
+
+.bg-header {
+  background-image: url(./bgheader6.jpeg);
+  background-position: center;
+  background-position: unset;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  width: 100%;
+  height: 560px;
+  position: absolute;
+}
+
+header h1 {
+  font-size: 45px;
+  color: var(--vermelho);
+  z-index: 1000;
+}
+
+header p {
+  font-size: 40px;
+  line-height: 37px;
+  margin: 0 0 30px 0;
+  padding: 0 25px;
+  text-align: center;
+}
+
+.frame-vsl {
+  border: 2px solid var(--vermelho);
+  width: 800px;
+  height: 500px;
+  z-index: 1000;
+}
+
+/* onda */
+
+.waves {
+  position: relative;
+  left:0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  rotate: 180deg;
+}
+
+.wave-trás {
+  animation: moveWave-trás 5s ease-in-out infinite alternate;
+}
+
+@keyframes moveWave-trás {
+  from{
+    transform: scalex(1.5) ; 
+    translateX: 100px;
+  }
+}
+
+.wave-meio{
+  animation: moveWave-meio 3s  ease-in-out infinite alternate;
+}
+
+@keyframes moveWave-meio {
+  from {
+    transform: scalex(1.5);
+  }
+}
+
+.wave-frente{
+  animation: moveWave-frente 5s ease-in-out infinite alternate;
+}
+
+@keyframes moveWave-frente {
+  from{
+    transform: scalex(1.5);
+    translateX: 1500px;
+  }
+}
+
+/* Garantia */
+
+.garantia {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0;
+  background-color: rgb(183, 60, 60);
+  width: 100%;
+  padding-right: 20px;
+  margin-top: 0;
+  border-bottom: 5px solid rgb(130, 44, 44);
+}
+
+.garantia-textos p {
+  letter-spacing: -1px !important;
+  width: 400px;
+  font-size: 20px;
+  color: white;
+}
+
+.garantia-image {
+  margin-top: -60px;
+  margin-bottom: -60px;
+  width: 350px;
+}
+
+/* FAQ */
+
+section {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 800;
+  color: rgb(255, 76, 76);
+  line-height: 44px;
+}
+
+.faq {
+  max-width: 700px;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgb(255, 76, 76);
+  cursor: pointer;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question h3 {
+  color: rgb(255, 76, 76);
+  font-size: 1.2rem;
+  letter-spacing: -1px;
+  font-weight: 800;
+}
+
+.question h3:hover {
+  color: var(--texto);
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.4s ease;
+}
+
+.answer p {
+  padding-top: 1rem;
+  line-height: 1.6;
+  font-size: 1.4rem;
+  color: var(--texto);
+}
+
+.faq.active .answer {
+  max-height: 300px;
+  animation: fade 1s ease-in-out;
+}
+
+.faq.active {
+  margin-bottom: 30px;
+}
+
+.faq.active svg {
+  transform: rotate(180deg);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* Footer btn */
+
+.footer-btn {
+  text-decoration: none;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 50px;
+  background-color: rgb(214, 64, 64);
+  padding: 10px 60px;
+  border-radius: 80px;
+  border-bottom: 5px solid rgb(130, 44, 44);
+  color: white;
+  width: 740px;
+}
+
+.footer-btn:hover {
+  border-bottom: none;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  padding: 30px 70px;
+  background-color: rgb(183, 60, 60);
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+footer p {
+  color: white;
+  letter-spacing: -1px;
+}
+
+.copyright-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.copyright-footer p {
+  font-size: 0.8rem;
+}
+
+.flex-footer {
+  display: flex;
+  align-items: center;
+}
+
+.teste-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.projeto-confeitaria {
+  width: 450px;
+}
+
+.projeto-confeitaria p {
+  width: 100%;
+}
+
+.termos-politicas {
+  color: white;
+}
+
+.termos-politicas a {
+  color: rgba(255, 255, 255, 0.648);
+  text-decoration: none;
+  letter-spacing: -1px;
+}
+
+.facebook-footer p {
+  font-size: 0.6rem;
+  width: 900px;
+  text-align: center;
+  align-content: center;
+  flex-wrap: wrap;
+  letter-spacing: 0;
+  margin-top: 40px;
+}
+
+.facebook-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  /* Responsivo */
+
+/* header responsivo */
+@media (max-width: 960px) {
+    .btn {
+        width: 90%;
+    }
+}
+
+@media (max-width: 870px) {
+  .frame-vsl {
+    width: 550px;
+  }
+}
+
+@media (max-width: 620px) {
+  .frame-vsl {
+    width: 90%;
+  }
+
+  .btn {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  header p {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 390px) {
+  header p {
+    font-size: 30px;
+    line-height: 25px;
+    padding: 0 15px;
+  }
+
+  .btn {
+    font-size: 20px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  header p {
+    font-size: 25px;
+    line-height: 23px;
+  }
+}
+
+/* Garantia */
+
+@media (max-width: 810px) {
+  .garantia-image {
+    width: 292px;
+    margin: -34px 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .garantia {
+    flex-direction: column;
+    padding: 20px 0;
+    margin-bottom: 50px;
+    margin-top: 150px;
+  }
+
+  .garantia-textos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .garantia-image {
+    width: 250px;
+    margin: -180px 0 0 0;
+  }
+}
+
+@media (max-width: 460px) {
+  .garantia-textos p {
+    width: 90%;
+  }
+}
+
+/* Footer btn */
+
+@media (max-width: 800px) {
+  .footer-btn {
+    width: 600px;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer-btn {
+    width: 450px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-btn {
+    width: 300px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 340px) {
+  .footer-btn {
+    width: 100%;
+  }
+}
+
+/* Footer */
+
+@media(max-width: 950px) {
+  .facebook-footer p {
+    width: 90%;
+  }
+}
+
+@media(max-width: 890px) {
+  footer {
+    padding: 30px 0;
+  }
+
+  .flex-footer {
+    flex-direction: column;
+  }
+
+  .projeto-confeitaria {
+    width: 90%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .copyright-footer {
+    margin-right: 0;
+  }
+
+  .copyright img {
+    width: 150px;
+  }
+
+  .facebook-footer p {
+    margin-top: 20px;
+  }
+}
