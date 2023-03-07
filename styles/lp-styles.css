@@ -426,12 +426,6 @@ footer p {
   }
 }
 
-@media (min-width: 900px) {
-  .finalidade-produto {
-    margin-top: -50px;
-  }
-}
-
 /* Garantia */
 
 @media (max-width: 810px) {
