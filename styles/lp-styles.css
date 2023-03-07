@@ -420,6 +420,10 @@ footer p {
   .tresd-mockup {
     margin: 0;
   }
+
+  .checks > p:last-child {
+    margin-bottom: 10px;
+  }
 }
 
 /* Garantia */
