@@ -106,6 +106,51 @@ header p {
   }
 }
 
+/* Finalidade do produto */
+
+.finalidade-produto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-finalidade {
+  font-size: 40px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.checks-e-device {
+  display: flex;
+  align-items: center;
+}
+
+.checks {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.checks > p {
+  font-size: 1.2rem;
+  letter-spacing: -1px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.checks > p > i {
+  color: var(--vermelho);
+  font-size: 2.5rem;
+  margin-right: 8px;
+}
+
+.tresd-mockup {
+  width: 200px;
+  margin-left: 20px;
+}
+
+
 /* Garantia */
 
 .garantia {
@@ -117,7 +162,7 @@ header p {
   background-color: rgb(183, 60, 60);
   width: 100%;
   padding-right: 20px;
-  margin-top: 0;
+  margin-top: 1;
   border-bottom: 5px solid rgb(130, 44, 44);
 }
 
@@ -361,6 +406,19 @@ footer p {
   header p {
     font-size: 25px;
     line-height: 23px;
+  }
+}
+
+/* Mockup */
+
+@media (max-width: 850px) {
+  .checks-e-device {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .tresd-mockup {
+    margin: 0;
   }
 }
 
