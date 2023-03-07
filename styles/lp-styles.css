@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
 
 :root {
-    --rosafraco: #ff86c8;
-    --texto: #2b282a;
-    --vermelho: rgb(255, 76, 76);
-    --bg: #fff8dc;
-    --azul: #30706f;
+  --rosafraco: #ff86c8;
+  --texto: #2b282a;
+  --vermelho: rgb(255, 76, 76);
+  --bg: #fff8dc;
+  --azul: #30706f;
 }
 
 * {
@@ -25,7 +25,6 @@ header {
   align-items: center;
   background: #ffd4db;
   padding-bottom: 10px;
-  
 }
 
 .bg-header {
