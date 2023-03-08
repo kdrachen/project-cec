@@ -71,7 +71,7 @@ header p {
   height: 100%;
   rotate: 180deg;
   z-index: -12;
-  margin-top: -1;
+  margin-top: -2px;
 }
 
 .wave-trás {
