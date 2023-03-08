@@ -179,6 +179,111 @@ header p {
   width: 350px;
 }
 
+/* Oferta */
+
+.card-preco {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.card-content {
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  border-radius: 15px;
+}
+
+.card-oferta {
+  padding: 15px;
+  background-color: rgb(183, 60, 60);
+  border-bottom: 4px solid rgb(130, 44, 44);
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.card-oferta h1 {
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.card-texts {
+  padding: 20px 20px 40px 20px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-texts h2 {
+  font-size: 2rem;
+}
+
+.card-texts p {
+  font-size: 1.4rem;
+}
+
+.card-contador {
+  display: flex;
+}
+
+.contador-p {
+  font-size: 2rem !important;
+}
+
+.contador-segundos, .contador-minutos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.contador-segundos > span, .contador-minutos > span {
+  font-size: 30px;
+  line-height: 20px;
+  color: rgb(83, 28, 28);
+}
+
+.contador-segundos {
+  margin-left: 25px;
+}
+
+.card-texts > h1, .cinco-cinco {
+  color: rgb(130, 44, 44);
+}
+
+.font-alta {
+  font-size: 100px;
+  letter-spacing: -10px;
+  line-height: 90px;
+  color: rgb(130, 44, 44);
+}
+
+.btn-card-preco {
+  text-decoration: none;
+  font-weight: 900;
+  text-align: center;
+  font-size: 25px;
+  background-color: rgb(214, 64, 64);
+  padding: 10px 60px;
+  border-radius: 80px;
+  border-bottom: 5px solid rgb(130, 44, 44);
+  color: white;
+  width: 90%;
+  margin: 15px 0;
+}
+
+.btn-card-preco:hover {
+  border: none;
+}
+
+.compra-segura {
+  width: 80%;
+  margin-top: 30px;
+}
+
 /* FAQ */
 
 section {
@@ -464,6 +569,80 @@ footer p {
 @media (max-width: 268px) {
   .garantia-image {
     width: 100%;
+  }
+}
+
+/* Preço */
+
+@media (max-width: 540px) {
+  .card-texts {
+    width: 400px;
+  }
+  
+  .contador-p {
+    font-size: 1.8rem !important;
+  }
+  
+  .btn-card-preco {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .card-oferta h1 {
+    font-size: 2rem !important;
+  }
+
+  .card-texts {
+    width: 300px;
+  }
+
+  .contador-p {
+    font-size: 1.4rem !important;
+  }
+
+  .btn-card-preco {
+    font-size: 19px;
+    padding: 10px 30px;
+  }
+
+  .compra-segura {
+    width: 90%;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-oferta h1 {
+    font-size: 1.7rem !important;
+  }
+
+  .card-texts {
+    width: 250px;
+  }
+
+  .contador-p {
+    font-size: 1.4rem !important;
+  }
+
+  .btn-card-preco {
+    font-size: 17px;
+    padding: 10px 10px;
+  }
+
+  .font-alta {
+    font-size: 70px;
+  }
+
+  .contador-p {
+    font-size: 1.2rem !important;
+  }
+
+  .contador-segundos, .contador-minutos {
+    font-size: 1.2rem !important;
+  }
+
+  .card-texts h2 {
+    font-size: 1.7rem;
   }
 }
 
