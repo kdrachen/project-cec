@@ -6,8 +6,8 @@ faqs.forEach((faq) => {
     });
 });
 
-var minutos = 7;
-var segundos = 59;
+var minutos = 14;
+var segundos = 00;
 
 function atualizaContador() {
   var minutosElemento = document.getElementById("minutos");
