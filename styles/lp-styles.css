@@ -137,6 +137,7 @@ header p {
   display: flex;
   align-items: center;
   margin-top: 10px;
+  line-height: 20px;
 }
 
 .checks > p > i {
@@ -214,6 +215,9 @@ header p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: white;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .card-texts h2 {
@@ -275,9 +279,6 @@ header p {
   margin: 15px 0;
 }
 
-.btn-card-preco:hover {
-  border: none;
-}
 
 .compra-segura {
   width: 80%;
@@ -377,10 +378,6 @@ section {
   border-bottom: 5px solid rgb(130, 44, 44);
   color: white;
   width: 740px;
-}
-
-.footer-btn:hover {
-  border-bottom: none;
 }
 
 /* Footer */
