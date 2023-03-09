@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+
+:root {
+  --rosafraco: #ff86c8;
+  --texto: #2b282a;
+  --vermelho: rgb(255, 76, 76);
+  --bg: #fff8dc;
+  --azul: #30706f;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  background: #ffd4db;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--texto);
+  letter-spacing: -1px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffd4db;
+  padding-bottom: 10px;
+}
+
+.texto-facebook {
+  margin-top: 100px;
+  width: 800px;
+}
+
+.clique-no-botao {
+  font-size: 1.2rem;
+}
+
+.btn-card-preco {
+  text-decoration: none;
+  font-weight: 900;
+  text-align: center;
+  font-size: 25px;
+  background-color: rgb(214, 64, 64);
+  padding: 10px 60px;
+  border-radius: 80px;
+  border-bottom: 5px solid rgb(130, 44, 44);
+  color: white;
+  width: 400px;
+  margin: 15px 0;
+}
+
+.logo {
+  width: 300px;
+}
+
+@media (max-width: 860px) {
+  .texto-facebook {
+    width: 90%;
+    margin-top: 50px;
+  }
+
+  .logo {
+    width: 250px;
+  }
+
+  .clique-no-botao {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 430px) {
+  .btn-card-preco {
+    width: 90%;
+  }
+
+  .texto-facebook {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 277px) {
+  .logo {
+    width: 100%;
+  }
+}
