@@ -36,6 +36,11 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: -2px;
 }
 
+.enfase {
+  color: var(--vermelho);
+  font-weight: 900;
+}
+
 /* Header */
 
 header {
@@ -48,8 +53,12 @@ header {
 
 header h1 {
   font-size: 45px;
-  color: var(--vermelho);
+  color: var(--texto);
   z-index: 1000;
+  width: 900px;
+  line-height: 45px;
+  text-align: center;
+  margin: 20px 0;
 }
 
 header p {
@@ -501,6 +510,10 @@ footer p {
   .btn {
     width: 90%;
   }
+
+  header h1 {
+    width: 90%;
+  }
 }
 
 @media (max-width: 870px) {
@@ -523,6 +536,11 @@ footer p {
   header p {
     font-size: 30px;
     line-height: 30px;
+  }
+
+  header h1 {
+    font-size: 35px;
+    line-height: 35px;
   }
 }
 
