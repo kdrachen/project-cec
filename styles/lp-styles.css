@@ -5,6 +5,20 @@
   color: white;
 }
 
+body::-webkit-scrollbar {
+  width: 14px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--vermelho);    
+  border-radius: 10px;
+  border: 2.5px solid rgb(130, 44, 44);
+}
+
 :root {
   --rosafraco: #ff86c8;
   --texto: #2b282a;
