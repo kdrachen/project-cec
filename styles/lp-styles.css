@@ -158,6 +158,49 @@ header p {
   margin-left: 20px;
 }
 
+/* Confeitaria */
+
+.confeitaria {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.confeitaria-bolo {
+  width: 600px;
+}
+
+.confeitaria-textos {
+  width: 400px;
+}
+
+.confeitaria-textos p {
+  letter-spacing: -1px;
+  margin-top: 10px;
+}
+
+.confeitaria-textos h1 {
+  color: var(--vermelho);
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 40px;
+  margin-top: 14px;
+}
+
+.btn-confeitaria {
+  display: block;
+  text-decoration: none;
+  font-weight: 900;
+  text-align: center;
+  font-size: 25px;
+  background-color: rgb(214, 64, 64);
+  padding: 10px 60px;
+  border-radius: 80px;
+  border-bottom: 5px solid rgb(130, 44, 44);
+  color: white;
+  width: 90%;
+  margin-top: 15px;
+}
 
 /* Garantia */
 
@@ -533,11 +576,61 @@ footer p {
   .checks > p:last-child {
     margin-bottom: 10px;
   }
+
+  .confeitaria {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 960px) {
   .finalidade-produto {
     margin-top: -50px;
+  }
+}
+
+/* Confeitaria */
+
+@media (max-width: 953px) {
+  .confeitaria {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+
+  .confeitaria-bolo {
+    width: 500px;
+  }
+
+  .confeitaria-textos {
+    width: 90%;
+    align-items: center;
+  }
+
+  .confeitaria-textos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-confeitaria {
+    width: 400px;
+  }
+}
+
+@media (max-width: 550px) {
+  .confeitaria-bolo {
+    width: 100%;
+  }
+}
+
+@media (max-width: 440px) {
+  .btn-confeitaria {
+    width: 100%;
+  }
+}
+
+@media (min-width: 953px) {
+  .confeitaria {
+    margin-bottom: 50px;
   }
 }
 
