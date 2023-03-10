@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
 
+::selection {
+  background-color: #abc9dc;
+  color: white;
+}
+
 :root {
   --rosafraco: #ff86c8;
   --texto: #2b282a;
