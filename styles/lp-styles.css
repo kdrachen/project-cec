@@ -187,21 +187,6 @@ header p {
   margin-top: 14px;
 }
 
-.btn-confeitaria {
-  display: block;
-  text-decoration: none;
-  font-weight: 900;
-  text-align: center;
-  font-size: 25px;
-  background-color: rgb(214, 64, 64);
-  padding: 10px 60px;
-  border-radius: 80px;
-  border-bottom: 5px solid rgb(130, 44, 44);
-  color: white;
-  width: 90%;
-  margin-top: 15px;
-}
-
 /* Garantia */
 
 .garantia {
@@ -610,20 +595,10 @@ footer p {
     display: flex;
     flex-direction: column;
   }
-
-  .btn-confeitaria {
-    width: 400px;
-  }
 }
 
 @media (max-width: 550px) {
   .confeitaria-bolo {
-    width: 100%;
-  }
-}
-
-@media (max-width: 440px) {
-  .btn-confeitaria {
     width: 100%;
   }
 }
