@@ -561,7 +561,7 @@ footer p {
 
 @media (max-width: 850px) {
   .checks-e-device {
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin-bottom: 40px;
   }
 
