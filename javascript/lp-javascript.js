@@ -34,3 +34,12 @@ function atualizaContador() {
 
 // Inicia a contagem
 var intervalId = setInterval(atualizaContador, 1000);
+
+// Pegar geo
+var colocarGeo = document.getElementById("#colocarGeo");
+fetch('https://freegeoip.app/json/')
+  .then(response => response.json())
+  .then(data => {
+    const city = data.city;
+    colocarGeo.innerText = city;
+  });

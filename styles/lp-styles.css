@@ -41,6 +41,26 @@ body::-webkit-scrollbar-thumb {
   font-weight: 900;
 }
 
+/* Geo */
+
+.loc {
+  background-color: #242424;
+  width: 100%;
+  height: 40px;
+}
+
+.loc p {
+  color: white;
+  font-size: 15px;
+  letter-spacing: -1px;
+}
+
+#colocarGeo {
+  color: var(--vermelho);
+  letter-spacing: -1px;
+  
+}
+
 /* Header */
 
 header {
