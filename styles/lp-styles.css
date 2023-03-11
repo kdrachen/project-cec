@@ -58,7 +58,7 @@ body::-webkit-scrollbar-thumb {
 #city {
   color: var(--vermelho);
   letter-spacing: -1px;
-  
+  font-weight: 900;
 }
 
 /* Header */
