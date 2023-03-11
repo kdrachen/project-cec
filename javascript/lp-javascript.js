@@ -36,10 +36,20 @@ function atualizaContador() {
 var intervalId = setInterval(atualizaContador, 1000);
 
 // Pegar geo
-var colocarGeo = document.getElementById("#colocarGeo");
-fetch('https://freegeoip.app/json/')
-  .then(response => response.json())
-  .then(data => {
-    const city = data.city;
-    colocarGeo.innerText = city;
-  });
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(showCity);
+} else {
+  console.log("Geolocation is not supported by this browser.");
+}
+
+function showCity(position) {
+  const latitude = position.coords.latitude;
+  const longitude = position.coords.longitude;
+  const url = `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${latitude}&lon=${longitude}`;
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      const city = data.address.city;
+      document.getElementById('city').innerText = city;
+    });
+}
