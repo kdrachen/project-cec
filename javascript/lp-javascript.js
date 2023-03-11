@@ -39,7 +39,7 @@ var intervalId = setInterval(atualizaContador, 1000);
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(showCity);
 } else {
-  console.log("Geolocation is not supported by this browser.");
+  console.log("Geolocation não é suportado por esse browser.");
 }
 
 function showCity(position) {
