@@ -322,7 +322,6 @@ header p {
   margin: 15px 0;
 }
 
-
 .compra-segura {
   width: 80%;
   margin-top: 30px;
@@ -461,11 +460,6 @@ footer p {
 .flex-footer {
   display: flex;
   align-items: center;
-}
-
-.teste-footer {
-  display: flex;
-  justify-content: center;
 }
 
 .projeto-confeitaria {
