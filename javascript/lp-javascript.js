@@ -36,31 +36,13 @@ function atualizaContador() {
 var intervalId = setInterval(atualizaContador, 1000);
 
 // Pegar geo
-if (navigator.geolocation) {
-  navigator.geolocation.getCurrentPosition(showLocation, errorHandler, { 
-    enableHighAccuracy: true, 
-    maximumAge: 0 
-  });
-} else {
-  console.log("Geolocalização não é suportada neste navegador");
-}
-
-function showLocation(position) {
-  var latitude = position.coords.latitude;
-  var longitude = position.coords.longitude;
-  var url = "https://nominatim.openstreetmap.org/reverse?format=json&lat=" + latitude + "&lon=" + longitude;
-  var xhr = new XMLHttpRequest();
-  xhr.open('GET', url, true);
-  xhr.onload = function() {
-    if (xhr.status === 200) {
-      var data = JSON.parse(xhr.responseText);
-      var city = data.address.city;
-      document.getElementById('city').innerHTML = city;
-    }
-  };
-  xhr.send();
-}
-
-function errorHandler(error) {
-  console.log(error);
-}
+var xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://ipinfo.io/json', true);
+xhr.onload = function() {
+  if (xhr.status === 200) {
+    var data = JSON.parse(xhr.responseText);
+    var city = data.city;
+    document.getElementById('city').innerHTML = city;
+  }
+};
+xhr.send();
