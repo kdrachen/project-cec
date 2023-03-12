@@ -837,6 +837,12 @@ footer p {
   }
 }
 
+@media (min-width: 780px) {
+  .card-mg-bottom {
+    margin-left: 0;
+  }
+}
+
 /* Preço */
 
 @media (max-width: 540px) {
