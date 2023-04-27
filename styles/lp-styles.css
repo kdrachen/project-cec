@@ -160,6 +160,7 @@ header p {
   font-size: 40px;
   text-align: center;
   padding: 0 20px;
+  line-height: 35px;
 }
 
 .checks-e-device {
@@ -552,7 +553,7 @@ footer {
 
 footer p {
   color: white;
-  letter-spacing: -1px;
+  letter-spacing: 0.5px;
 }
 
 .copyright-footer {
@@ -583,6 +584,7 @@ footer p {
 
 .projeto-confeitaria p {
   width: 100%;
+  letter-spacing: -1px;
 }
 
 .termos-politicas {
@@ -680,6 +682,10 @@ footer p {
     margin-bottom: 40px;
   }
 
+  .checks {
+    align-items: center;
+  }
+
   .tresd-mockup {
     margin: 0;
   }
@@ -690,6 +696,20 @@ footer p {
 
   .confeitaria {
     margin-top: 0;
+  }
+
+  #retirar-br {
+    display: none;
+  }
+
+  .checks > p {
+    width: 500px;
+  }
+}
+
+@media (max-width: 560px) {
+  .checks > p {
+    width: 90%;
   }
 }
 
@@ -945,6 +965,7 @@ footer p {
   .footer-btn {
     width: 300px;
     font-size: 20px;
+    line-height: 20px;
   }
 }
 
