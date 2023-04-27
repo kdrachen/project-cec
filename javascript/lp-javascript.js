@@ -22,7 +22,6 @@ function atualizaContador() {
   } else {
     // Acabou o tempo, para a contagem
     clearInterval(intervalId);
-    alert("Tempo acabou!");
     return;
   }
 
