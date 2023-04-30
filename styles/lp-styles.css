@@ -153,6 +153,7 @@ header p {
   text-align: center;
   padding: 0 20px;
   line-height: 35px;
+  margin-bottom: 10px;
 }
 
 .checks-e-device {
@@ -617,7 +618,6 @@ footer p {
     width: 90%;
   }
 }
-
 
 @media (max-width: 620px) {
   .btn {
