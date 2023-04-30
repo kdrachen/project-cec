@@ -95,14 +95,6 @@ header p {
   text-align: center;
 }
 
-.frame-vsl {
-  border: 2px solid var(--vermelho);
-  width: 800px;
-  height: 450px;
-  z-index: 1000;
-  border-radius: 20px;
-}
-
 /* onda */
 
 .waves {
@@ -626,17 +618,8 @@ footer p {
   }
 }
 
-@media (max-width: 870px) {
-  .frame-vsl {
-    width: 550px;
-  }
-}
 
 @media (max-width: 620px) {
-  .frame-vsl {
-    width: 90%;
-  }
-
   .btn {
     font-size: 30px;
   }
