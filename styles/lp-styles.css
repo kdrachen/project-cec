@@ -41,6 +41,11 @@ body::-webkit-scrollbar-thumb {
   font-weight: 900;
 }
 
+.enfase-black {
+  color: var(--texto);
+  font-weight: 900;
+}
+
 /* Geo */
 
 .loc {
@@ -93,6 +98,20 @@ header p {
   margin: 0 0 30px 0;
   padding: 0 25px;
   text-align: center;
+}
+
+.textos-carta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textos-carta > p {
+  font-size: 25px;
+  text-align: left;
+  margin: 0 10px 10px 10px;
+  line-height: 28px;
+  width: 1050px;
 }
 
 /* onda */
@@ -654,6 +673,22 @@ footer p {
   header p {
     font-size: 25px;
     line-height: 23px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .textos-carta > p {
+    width: 90%;
+  }
+}
+
+@media (max-width: 584px) {
+  .textos-carta > p {
+    font-size: 20px;
+    line-height: 22px;
+    padding: 0 5px;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
   }
 }
 
