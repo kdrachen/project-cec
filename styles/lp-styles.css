@@ -78,7 +78,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #ffd4db;
+  background: #ffeaee; /* #ffd4db */
   padding-bottom: 10px;
 }
 
