@@ -690,6 +690,10 @@ footer p {
     margin-bottom: 20px;
     letter-spacing: -1px;
   }
+
+  .enfase-black {
+    letter-spacing: -0.5px;
+  }
 }
 
 /* Mockup */
