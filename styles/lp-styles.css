@@ -114,7 +114,7 @@ header p {
   width: 1050px;
 }
 
-iframe {
+.iframe {
   border: 3px solid var(--vermelho);
   border-radius: 5px;
   width: 800px;
@@ -676,7 +676,7 @@ footer p {
     padding: 0;
   }
 
-  iframe {
+  .iframe {
     height: 300px;
   }
 }
@@ -689,7 +689,7 @@ footer p {
 }
 
 @media (max-width: 1000px) {
-  iframe {
+  .iframe {
     width: 90%;
   }
 }
