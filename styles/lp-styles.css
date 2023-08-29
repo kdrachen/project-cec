@@ -114,6 +114,13 @@ header p {
   width: 1050px;
 }
 
+iframe {
+  border: 3px solid var(--vermelho);
+  border-radius: 5px;
+  width: 800px;
+  height: 500px;
+}
+
 /* onda */
 
 .waves {
@@ -667,12 +674,22 @@ footer p {
     font-size: 20px;
     padding: 0;
   }
+
+  iframe {
+    height: 300px;
+  }
 }
 
 @media (max-width: 320px) {
   header p {
     font-size: 25px;
     line-height: 23px;
+  }
+}
+
+@media (max-width: 1000px) {
+  iframe {
+    width: 90%;
   }
 }
 
